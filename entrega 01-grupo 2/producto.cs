@@ -29,11 +29,39 @@ namespace entrega_01_grupo_2
             {
 
             }
+
+            public void PriceVariation(int variacionP)
+            {
+
+            }
         }
 
         public class Animals :hereda2
         {
+            public void Units(int maximo)
+            {
 
+            }
+
+            public void EscapeProbability(int probabilidadF) //probabilidad de fuga
+            {
+
+            }
+
+            public void RangeOfUnitsEscaping(int rangoF) //rango de fuga
+            {
+
+            }
+
+            public void ProbabilityOfSuddenDeath(int probabilidadMS)
+            {
+
+            }
+
+            public void RangeOfUnitsDyingSuddenly(int rangoMS)
+            {
+
+            }
         }
 
         public class FinishProduct 

@@ -34,17 +34,15 @@ namespace entrega_01_grupo_2
             int farmPlaceY = randNum.Next(0, 5);
             farmPlaceY = farmPlaceY * 10;
 
-            int lakePlaceX = randNum.Next(6, 10);
+            int lakePlaceX = randNum.Next(6, 9);
             lakePlaceX = lakePlaceX * 10;
-            int lakePlaceY = randNum.Next(5, 10);
+            int lakePlaceY = randNum.Next(5, 9);
             lakePlaceY = lakePlaceY * 10;
 
             int firstCol = 0;
-            int lakeCol = 0;
             if (HoV == 0)
             {
                 bool a2 = true;
-                bool a3 = true;
                 while (a2 == true)
                 {
                     firstCol = randNum.Next(0, 99);
@@ -86,12 +84,12 @@ namespace entrega_01_grupo_2
                 int d = 0;
                 while(b < row.Count)
                 {
-                    // create River (crea lago)
+                    // create River (crea rio)
                     if (YesRiver == true)
                     {
                         if (HoV == 0) //Vertical
                         {
-                            if (b > firstCol && b < firstCol + 5)
+                            if (b > firstCol && b < firstCol + 6)
                             {
                                 Console.BackgroundColor = ConsoleColor.Blue;
                                 Console.ForegroundColor = ConsoleColor.Blue;
@@ -105,7 +103,7 @@ namespace entrega_01_grupo_2
 
                         else //Horizontal
                         {
-                            if (a > firstCol && a < firstCol + 5)
+                            if (a > firstCol && a < firstCol + 6)
                             {
                                 Console.BackgroundColor = ConsoleColor.Blue;
                                 Console.ForegroundColor = ConsoleColor.Blue;
@@ -127,7 +125,7 @@ namespace entrega_01_grupo_2
                                 Console.ForegroundColor = ConsoleColor.Blue;
                             }
 
-                            else if (b > lakeCol && b < lakeCol + 15)
+                            else if (b > firstCol && b < firstCol + 6)
                             {
                                 if (LoV == 3)
                                 {
@@ -136,10 +134,15 @@ namespace entrega_01_grupo_2
                                         Console.BackgroundColor = ConsoleColor.Green;
                                         Console.ForegroundColor = ConsoleColor.Black;
                                     }
-                                    else
+                                    else if (HoV != 0)
                                     {
                                         Console.BackgroundColor = ConsoleColor.Green;
                                         Console.ForegroundColor = ConsoleColor.Black;
+                                    }
+                                    else
+                                    {
+                                        Console.BackgroundColor = ConsoleColor.Blue;
+                                        Console.ForegroundColor = ConsoleColor.Blue;
                                     }
 
                                 }
@@ -167,7 +170,7 @@ namespace entrega_01_grupo_2
                             Console.ForegroundColor = ConsoleColor.DarkGray;
                         }
 
-                        else if (b > firstCol && b < firstCol + 5)
+                        else if (b > firstCol && b < firstCol + 6)
                         {
                             if(HoV == 0)
                             { 

@@ -45,7 +45,7 @@ namespace entrega_01_grupo_2
 
         public void Kind(string tipo)
         {
-            Console.WriteLine($"es una: {tipo}");
+            Console.WriteLine($"es un(a): {tipo}");
         }
         
         public void SalePrice(int precioventa)
