@@ -8,14 +8,24 @@ namespace entrega_01_grupo_2
 {
     class edificacion
     {
-        public class plantation
+        public class plantation : hereda
         {
+            public void Worms(bool gusano)
+            {
 
+            }
+            public void Undergrowth(bool maleza)
+            {
+
+            }
         }
 
-        public class cattle
+        public class cattle : hereda
         {
+            public void Units(int unidades)
+            {
 
+            }
         }
 
         public class StorageBuilding

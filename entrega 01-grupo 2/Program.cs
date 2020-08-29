@@ -63,10 +63,10 @@ namespace Entrega1
             MapCreator mc = new MapCreator(addRiver,addLake);
 
             Console.WriteLine(mc);
-
-            //Farm f = new Farm(0, 0);
-            //River r = new River();
             Console.ReadKey();
+            Console.WriteLine("hola mundo");
+            Console.ReadKey();
+
         }
     }
 }

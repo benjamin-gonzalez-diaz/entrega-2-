@@ -45,8 +45,11 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Class2.cs" />
+    <Compile Include="Class3.cs" />
     <Compile Include="consumible.cs" />
     <Compile Include="edificacion.cs" />
+    <Compile Include="hereda2.cs" />
+    <Compile Include="herencia.cs" />
     <Compile Include="Mercado.cs" />
     <Compile Include="producto.cs" />
     <Compile Include="Terrain.cs" />

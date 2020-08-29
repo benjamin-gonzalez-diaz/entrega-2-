@@ -34,9 +34,9 @@ namespace entrega_01_grupo_2
             int farmPlaceY = randNum.Next(0, 5);
             farmPlaceY = farmPlaceY * 10;
 
-            int lakePlaceX = randNum.Next(5, 8);
+            int lakePlaceX = randNum.Next(6, 10);
             lakePlaceX = lakePlaceX * 10;
-            int lakePlaceY = randNum.Next(4, 8);
+            int lakePlaceY = randNum.Next(5, 10);
             lakePlaceY = lakePlaceY * 10;
 
             int firstCol = 0;
@@ -158,7 +158,7 @@ namespace entrega_01_grupo_2
 
                         }
                     }
-                    //Create Farm (cera granja)
+                    //Create Farm (crea granja)
                     if (a > farmPlaceY && a < farmPlaceY + 30)
                     {
                         if (b > farmPlaceX && b < farmPlaceX + 20)

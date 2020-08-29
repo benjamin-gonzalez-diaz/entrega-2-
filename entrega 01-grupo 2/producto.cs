@@ -8,12 +8,30 @@ namespace entrega_01_grupo_2
 {
     class producto
     {
-        public class Seeds
+        public class Seeds : hereda2
         {
+            public void ProbabilityOfWorms(int probabilidadG)
+            {
 
+            }
+
+            public void WormPenalty(int penalizacionG)
+            {
+
+            }
+
+            public void WeedProbability(int probabilidadM)
+            {
+
+            }
+
+            public void WeedPenalty(int penalizacionM)
+            {
+
+            }
         }
 
-        public class Animals
+        public class Animals :hereda2
         {
 
         }
